@@ -14,7 +14,7 @@ import java.rmi.UnexpectedException;
 
 public class NetworkLogTest extends TestBase {
     @Test(dataProvider = "hardCodedBrowsers")
-    public void networkLogShouldHaveMainjs(String browser, String version, String os, Method method)
+    public void networkPerformanceTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
         this.createDriver(browser, version, os, method.getName());
