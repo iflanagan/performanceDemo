@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class CustomPerformanceCommandTest extends TestBase {
     @Test(dataProvider = "hardCodedBrowsers")
-    public void verifyHelloOutput(String browser, String version, String os, Method method)
+    public void pageloadTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
 
         this.createDriver(browser, version, os, method.getName());
