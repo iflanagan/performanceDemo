@@ -84,17 +84,21 @@ public class SauceDemoPage {
         return (List<Map<String, Object>>) this.jsDriver.executeScript("sauce:log", logType);
     }
 
+    /**
     public Map getMetrics() {
         Map<String, Object> logType = new HashMap();
         logType.put("type","sauce:metrics");
         return (Map<String, Object>) this.jsDriver.executeScript("sauce:log", logType);
     }
+    **/
 
+    /**
     public Map getTiming() {
         Map<String, Object> logType = new HashMap();
         logType.put("type","sauce:timing");
         return (Map<String, Object>) this.jsDriver.executeScript("sauce:log", logType);
     }
+    **/
 
     public Map assertPerformancePageLoad(String name) {
         Map<String, Object> logType = new HashMap();
