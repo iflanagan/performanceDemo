@@ -29,9 +29,9 @@ public class PerformanceTest extends TestBase {
 
         // Checking metrics existence
 
-       Assert.assertTrue(performance.containsKey("load"));
-		Assert.assertTrue(performance.containsKey("speedIndex"));
-		Assert.assertTrue(performance.containsKey("timeToFirstByte"));
+        Assert.assertTrue(performance.containsKey("load"));
+        Assert.assertTrue(performance.containsKey("speedIndex"));
+        Assert.assertTrue(performance.containsKey("timeToFirstByte"));
         Assert.assertTrue(performance.containsKey("firstInteractive"));
         Assert.assertTrue(performance.containsKey("firstInteractive"));
         Assert.assertTrue(performance.containsKey("estimatedInputLatency"));
