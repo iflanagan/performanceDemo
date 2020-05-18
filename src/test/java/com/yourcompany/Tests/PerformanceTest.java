@@ -29,15 +29,23 @@ public class PerformanceTest extends TestBase {
 
         // Checking metrics existence
 
-        Assert.assertTrue(performance.containsKey("load"));
-        Assert.assertTrue(performance.containsKey("speedIndex"));
-        Assert.assertTrue(performance.containsKey("pageWeight"));
-        Assert.assertTrue(performance.containsKey("pageWeightEncoded"));
-        Assert.assertTrue(performance.containsKey("timeToFirstByte"));
-        Assert.assertTrue(performance.containsKey("timeToFirstInteractive"));
-        Assert.assertTrue(performance.containsKey("firstContentfulPaint"));
-        Assert.assertTrue(performance.containsKey("perceptualSpeedIndex"));
+       Assert.assertTrue(performance.containsKey("load"));
+		Assert.assertTrue(performance.containsKey("speedIndex"));
+		Assert.assertTrue(performance.containsKey("timeToFirstByte"));
+        Assert.assertTrue(performance.containsKey("firstInteractive"));
+        Assert.assertTrue(performance.containsKey("firstInteractive"));
+        Assert.assertTrue(performance.containsKey("estimatedInputLatency"));
         Assert.assertTrue(performance.containsKey("domContentLoaded"));
+        Assert.assertTrue(performance.containsKey("firstVisualChange"));
+        Assert.assertTrue(performance.containsKey("firstPaint"));
+        Assert.assertTrue(performance.containsKey("firstContentfulPaint"));
+        Assert.assertTrue(performance.containsKey("firstMeaningfulPaint"));
+        Assert.assertTrue(performance.containsKey("lastVisualChange"));
+        Assert.assertTrue(performance.containsKey("firstCPUIdle"));
+        Assert.assertTrue(performance.containsKey("firstInteractive"));
+        Assert.assertTrue(performance.containsKey("totalBlockingTime"));
+        Assert.assertTrue(performance.containsKey("score"));
+        
     }
 
 }
