@@ -110,7 +110,7 @@ public class SauceDemoPage {
 
     public Map assertPerformancePageWeight(String name) {
         Map<String, Object> logType = new HashMap();
-        String myArray[] = { "pageWeight" };
+        String myArray[] = { "firstPaint" };
         logType.put("name",name);
         logType.put("metrics", myArray);
         return (Map<String, Object>) this.jsDriver.executeScript("sauce:performance", logType);
